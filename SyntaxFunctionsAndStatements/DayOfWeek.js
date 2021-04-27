@@ -16,7 +16,7 @@ function printTheNumberOfDay(param) {
         result = 7;
     } else {
         result = 'error';
-    }
+    } 
     return result;
 }
 
