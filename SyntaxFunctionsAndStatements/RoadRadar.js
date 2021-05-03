@@ -16,18 +16,18 @@ function speedLimit(currSpeed, area) {
         speedOverTheLimit = currSpeed - 130;
     }
     if (speedOverTheLimit > 0) {
-        
+        output +=`The speed is ${speedOverTheLimit} km/h faster than the allowed speed of ${allowedSpeed} - `;
         if (speedOverTheLimit <= 20) {
-            output = 'speeding';
+            output += 'speeding';
         } else if (speedOverTheLimit > 20 && speedOverTheLimit <= 40) {
-            output = 'excessive speeding';
+            output += 'excessive speeding';
         } else if (speedOverTheLimit > 40) {
-            output = 'reckless driving';
-        } else {
-            output = `Driving ${currSpeed} km/h in a ${allowedSpeed} zone`;
+            output += 'reckless driving';
         }
+    }else {
+        output = `Driving ${currSpeed} km/h in a ${allowedSpeed} zone`;
     }
     return output;
 }
 
-console.log(speedLimit(40, 'city'));
+console.log(speedLimit(21, 'residential'));
