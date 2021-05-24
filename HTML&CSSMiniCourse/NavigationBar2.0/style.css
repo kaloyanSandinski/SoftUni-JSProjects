@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+body #navigationBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    background-color: #D3D3D3;
+}
+
+body li {
+    margin: 5px;
+    display: inline-block;
+}
+
+body a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttons {
+    color: #009902;
+    background-color: #D3D3D3;
+}
+
+.buttons:hover {
+    color: white;
+    background-color: #009902;
+}
