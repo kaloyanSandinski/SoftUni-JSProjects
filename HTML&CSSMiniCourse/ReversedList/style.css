@@ -1,0 +1,27 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 200px;
+    padding: 0;
+}
+
+body section {
+    position: fixed;
+    top: 10px;
+    width: 50%;
+    height: auto;
+    background-color: #E6E5E5;
+}
+
+body section h3 {
+    text-align: center;
+    color: #234465;
+}
+
+body section ol {
+    margin-top: auto;
+    margin-left: 15%;
+    margin-right: auto;
+    line-height: 1.5;
+    text-decoration: underline 1px;
+    text-underline-offset: 3px;
+}
