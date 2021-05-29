@@ -2,14 +2,14 @@ function fromJSONToHTMLTable(inputData) {
     let inputArr = JSON.parse(inputData);
     let tableHTMLOutput = '';
 
-    tableHTMLOutput += '<table>';
+    tableHTMLOutput += '<table>\n';
     tableHTMLOutput += '<tr>';
 
     Object.keys(inputArr[0]).forEach(element => {
         tableHTMLOutput += `<th>${element}</th>`;
     });
 
-    tableHTMLOutput += '</tr>';
+    tableHTMLOutput += '</tr>\n';
 
     inputArr.forEach(obj => {
         tableHTMLOutput += '<tr>';
@@ -18,10 +18,10 @@ function fromJSONToHTMLTable(inputData) {
             tableHTMLOutput += `<td>${element}</td>`;
         });
 
-        tableHTMLOutput += '</tr>';
+        tableHTMLOutput += '</tr>\n';
     });
 
-    tableHTMLOutput += '</table>';
+    tableHTMLOutput += '</table>\n';
 
     return tableHTMLOutput;
 }
