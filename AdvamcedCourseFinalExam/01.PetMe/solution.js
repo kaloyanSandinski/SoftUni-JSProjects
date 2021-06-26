@@ -12,7 +12,7 @@ function solve() {
         if (!Number(inputData[1].value)) {
             return;
         }
-        pharagraph.innerHTML = `<strong>${inputData[0].value}</strong>" is a "<strong>${inputData[1].value}</strong>" year old "<strong>${inputData[2].value}</strong>`;
+        pharagraph.innerHTML = `<strong>${inputData[0].value}</strong> is a <strong>${inputData[1].value}</strong> year old <strong>${inputData[2].value}</strong>`;
         let span = document.createElement('span');
         span.textContent = `Owner: ${inputData[3].value}`;
         button = document.createElement('button');
@@ -39,7 +39,7 @@ function solve() {
     function transferPetToNewOwner(e) {
         let listItem = e.target.parentNode.parentNode;
         if (listItem.querySelector('input').value != '') {
-            listItem.querySelector('span').textContent = `New Owner ${listItem.querySelector('input').value}`;
+            listItem.querySelector('span').textContent = `New Owner: ${listItem.querySelector('input').value}`;
             listItem.querySelector('div').remove();
             listItem.appendChild(document.createElement('button'));
             listItem.querySelector('button').textContent = 'Checked';
