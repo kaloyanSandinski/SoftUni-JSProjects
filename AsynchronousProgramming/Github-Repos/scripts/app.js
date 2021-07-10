@@ -1,9 +1,4 @@
-function loadRepos() {
-    let button = document.querySelector('button');
-    button.addEventListener('click', asyncLoadRepos);
-}
-
-async function asyncLoadRepos() {
+async function loadRepos() {
     let username = document.querySelector('#username').value;
     let reposList = document.querySelector('#repos');
     let url = `https://api.github.com/users/${username}/repos`;
