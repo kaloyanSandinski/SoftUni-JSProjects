@@ -7,7 +7,6 @@ async function getRecepieList() {
     main.innerHTML = '';
     Object.values(recepies).forEach(r => {
         const res = generateElements(r);
-        console.log(res);
         main.appendChild(res);
     });
 }
